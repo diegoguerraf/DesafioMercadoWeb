@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feria Chilena de la Fruta</title>
+    <!-- Css bootstrap-->
+    <link rel="stylesheet" href="/bootstrap/bootstrap.css">
+    <!-- css personal-->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Fontawesome kit-->
+    <script src="https://kit.fontawesome.com/89017be19b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    {{> menu}}
+    {{{body}}}
+
+</body>
+</html>
+
+
+   {{!-- {{{body}}} es un marcador de posición para contenido HTML. Cuando se renderiza la plantilla, este marcador de posición se reemplaza por el contenido HTML que se pasa al motor de plantillas. Las tres llaves permiten que el contenido HTML se renderice tal como está, sin escapar de los caracteres HTML. --}}
+
+
+    {{!-- Las tres llaves {{{ }}} se utilizan en lugar de las dos llaves {{ }} cuando quieres que el contenido se renderice tal como está, sin escapar de los caracteres HTML.
+
+Por ejemplo, si body contiene <b>Hola</b>, con {{body}} se renderizaría como &lt;b&gt;Hola&lt;/b&gt; (es decir, verías literalmente <b>Hola</b> en la página), mientras que con {{{body}}} se renderizaría como Hola en negrita.
+
+Por lo tanto, {{{body}}} se usa cuando quieres insertar HTML seguro y sin procesar en la plantilla. --}}
+
+
